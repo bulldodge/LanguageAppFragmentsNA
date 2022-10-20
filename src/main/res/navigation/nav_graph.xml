@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.secretmessageappna.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_messageFragment2"
+            app:destination="@id/messageFragment2" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_message3Fragment"
+            app:destination="@id/message3Fragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_message2Fragment"
+            app:destination="@id/message2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment2"
+        android:name="com.example.secretmessageappna.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/message2Fragment"
+        android:name="com.example.secretmessageappna.Message2Fragment"
+        android:label="Message2Fragment" />
+    <fragment
+        android:id="@+id/message3Fragment"
+        android:name="com.example.secretmessageappna.Message3Fragment"
+        android:label="Message3Fragment" />
+</navigation>
